@@ -1,0 +1,61 @@
+<ion-header>
+ 
+  <ion-toolbar> 
+    <ion-buttons slot="start">
+      <ion-back-button
+      defaultHref = "/"
+      text= "Atras"
+      color= "Primary"
+      mode= "ios">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Juegos</ion-title>  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header> 
+      <ion-card-title class = "titulo">¿Sabías que...?</ion-card-title> 
+    </ion-card-header>
+  
+    <ion-card-content class = "ion-padding contenido">
+      Super Mario Bros fue lanzado la primera vez en la historia el 13 de septiembre de 1985 en Japon.
+
+      <ion-card-subtitle  class = "pulsaaqui">Pulsa la foto para mayor informacion</ion-card-subtitle>
+        <a href = "https://es.wikipedia.org/wiki/Super_Mario_Bros." target= "_blank"><ion-img src = "assets/icon/supermario.png"></ion-img></a>
+    </ion-card-content>
+    
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header> 
+      <ion-card-title class = "titulo">¿Sabías que...?</ion-card-title> 
+    </ion-card-header>
+  
+    <ion-card-content class = "ion-padding contenido">
+      El primer videojuego fue desarrollado por Alexsander S Douglas en el año 1952.
+
+      <ion-card-subtitle  class = "pulsaaqui">Pulsa la foto para mayor informacion</ion-card-subtitle>
+        <a href = "https://frogames.es/quien-creo-el-primer-videojuego-de-la-historia/#:~:text=En%20este%20caso%2C%20nos%20encontramos,ser%20humano%20contra%20una%20m%C3%A1quina." target= "_blank"><ion-img src = "assets/icon/primervideojuego.png"></ion-img></a>
+    </ion-card-content>
+    
+  </ion-card>
+  
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink = "/formulario">
+      <ion-icon name="person-add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+
+</ion-content>
+
+
+<ion-footer >
+  <ion-toolbar>
+    <ion-title>V.0.1</ion-title>
+  </ion-toolbar>
+</ion-footer>

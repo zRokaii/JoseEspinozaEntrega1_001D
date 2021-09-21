@@ -1,0 +1,63 @@
+<ion-header>
+ 
+  <ion-toolbar> 
+    <ion-buttons slot="start">
+      <ion-back-button
+      defaultHref = "/"
+      text= "Atras"
+      color= "Primary"
+      mode= "ios">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Salud</ion-title>
+  
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header> 
+      <ion-card-title class = "titulo">¿Sabías que...?</ion-card-title> 
+    </ion-card-header>
+  
+    <ion-card-content class = "ion-padding contenido">
+      Un estudio sugiere que falta de ejercicio genera tantas muertes como el tabaco en todo el mundo.
+
+      <ion-card-subtitle  class = "pulsaaqui">Pulsa la foto para mayor informacion</ion-card-subtitle>
+        <a href = "https://elpais.com/sociedad/2012/07/18/actualidad/1342607736_699758.html" target= "_blank"><ion-img src = "assets/icon/saludnumero1.jpg"></ion-img></a>
+    </ion-card-content>
+    
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-header> 
+      <ion-card-title class = "titulo">¿Sabías que...?</ion-card-title> 
+    </ion-card-header>
+  
+    <ion-card-content class = "ion-padding contenido">
+      Un estudio reciente determinó que comer fuera de casa podría aumentar el riesgo de padecer sobrepeso y tener niveles de colesterol más altos.
+
+      <ion-card-subtitle  class = "pulsaaqui">Pulsa la foto para mayor informacion</ion-card-subtitle>
+        <a href = "https://www.clikisalud.net/comer-fuera-de-casa-aumentaria-riesgo-de-obesidad/" target= "_blank"><ion-img src = "assets/icon/comidafuera.jpg"></ion-img></a>
+    </ion-card-content>
+    
+  </ion-card>
+  
+
+
+
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink = "/formulario">
+      <ion-icon name="person-add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+</ion-content>  
+
+<ion-footer >
+  <ion-toolbar>
+    <ion-title>V.0.1</ion-title>
+  </ion-toolbar>
+</ion-footer>

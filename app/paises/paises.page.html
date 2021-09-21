@@ -1,0 +1,69 @@
+<ion-header>
+ 
+  <ion-toolbar> 
+    <ion-buttons slot="start">
+      <ion-back-button
+      defaultHref = "/"
+      text= "Atras"
+      color= "Primary"
+      mode= "ios">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Paises</ion-title>  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-card>
+    <ion-card-header> 
+      <ion-card-title class = "titulo">¿Sabías que...?</ion-card-title> 
+    </ion-card-header>
+  
+    <ion-card-content class = "ion-padding contenido">
+      Chile es considerado el pais sismicamente mas activo del mundo.
+
+      <ion-card-subtitle  class = "pulsaaqui">Pulsa la foto para mayor informacion</ion-card-subtitle>
+       <a href = "https://es.wikipedia.org/wiki/Anexo:Terremotos_en_Chile" target= "_blank"><ion-img src = "assets/icon/sismico.jpg"></ion-img></a>
+    </ion-card-content>
+    
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header> 
+      <ion-card-title class = "titulo">¿Sabías que...?</ion-card-title> 
+    </ion-card-header>
+  
+    <ion-card-content class = "ion-padding contenido">
+      Rusia es el país más grande del mundo. Su dimensión cubre de hecho cerca del 11% de todas las tierras emergidas del planeta.
+
+      <ion-card-subtitle  class = "pulsaaqui">Pulsa la foto para mayor informacion</ion-card-subtitle>
+       <a href = "https://www.geografiainfinita.com/2019/06/los-paises-mas-grandes-del-mundo-en-superficie/" target= "_blank"><ion-img src = "assets/icon/rusia.jpg"></ion-img></a>
+    </ion-card-content>
+    
+  </ion-card>
+
+
+
+
+
+
+  
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink = "/formulario">
+      <ion-icon name="person-add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+
+</ion-content>
+
+
+<ion-footer >
+  <ion-toolbar>
+    <ion-title>V.0.1</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,42 @@
+<ion-header color= "white" class= "ion-no-padding">
+  
+<ion-toolbar>
+  
+    <ion-img src = "assets/icon/portadabuenarda.jpg"> </ion-img>
+   
+
+  </ion-toolbar>
+</ion-header>
+<ion-toolbar>
+  <ion-searchbar placeholder = "Que tema buscas" color = "primary" class = "ion-no-padding"></ion-searchbar>
+</ion-toolbar>
+
+
+<ion-content class="ion-padding">
+
+<ion-list>
+  <ion-item *ngFor= "let c of componentes"
+  [routerLink]= "c.redirecTo"
+  detail= "true">
+  <ion-icon [name]= "c.icon" slot="start" color= "primary" name="add"></ion-icon>
+    {{c.name}}
+  </ion-item>
+
+
+</ion-list>
+
+
+
+
+
+
+
+
+</ion-content>
+
+
+<ion-footer > 
+  <ion-toolbar>
+    <ion-title>V.0.1</ion-title>
+  </ion-toolbar>
+</ion-footer>
